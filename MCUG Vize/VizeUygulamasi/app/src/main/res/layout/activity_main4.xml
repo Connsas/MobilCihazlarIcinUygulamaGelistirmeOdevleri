@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity4">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="410dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSiparis"
+        android:layout_width="204dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/button_color"
+        android:text="Sipariş Ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout27" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout25"
+        android:layout_width="391dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/gorunenIsım"
+            android:layout_width="210dp"
+            android:layout_height="41dp"
+            android:text="Çorbanın İsmi"
+            android:textColor="@color/header_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="115dp"
+            android:layout_height="43sp"
+            android:text="Tuz Oranı"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/tuzOrani"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="2"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:secondaryProgressTint="@color/white"
+            app:tickMark="@drawable/tick_mark" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="115dp"
+            android:layout_height="43sp"
+            android:text="Acı Oranı"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/aciOrani"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="2"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:secondaryProgressTint="@color/white"
+            app:tickMark="@drawable/tick_mark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout26"
+        android:layout_width="394dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="11dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout25">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="343dp"
+            android:layout_height="39dp"
+            android:text="Lütfen İsteklerinizi İşaretleyin"
+            android:textColor="@color/header_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-203dp"
+            tools:layout_editor_absoluteY="454dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/switchSarimsak"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sarımsak"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchNane"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nane"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchDil"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dil"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/switchTerbiye"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Terbiye"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchBeyin"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Beyin"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchSirke"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sirke"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/switchKrema"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Krema"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchYag"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yağ"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchKasar"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kaşar"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/switchKitir"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kıtır"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchLimon"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Limon"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/switchTozbiber"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Toz Biber"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout27"
+        android:layout_width="390dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="19dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSiparis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout26">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="350dp"
+            android:layout_height="39dp"
+            android:text="Ekstra İsteklerinizi Yazabilirsiniz"
+            android:textColor="@color/header_color"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/customerRequest"
+            android:layout_width="377dp"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Başka Bir Arzunuz ?"
+            android:inputType="textPersonName"
+            android:textColor="@color/text_color"
+            android:textColorHint="#808080" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

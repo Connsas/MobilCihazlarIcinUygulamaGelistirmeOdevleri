@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:visibility="visible"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="282dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="84dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="276dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="179dp"
+        android:layout_height="467dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="84dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <RadioButton
+            android:id="@+id/ezogelinCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Ezogelin"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/dügünCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Düğün"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/mercimekCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Mercimek"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/brokoliCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Brokoli"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/kelleCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Kelle-Paça"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/yaylaCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Yayla"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/sehriyeCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Şehriye"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/domatesCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Domates"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/tarhanaCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Tarhana"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/mantarCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Mantar"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/iskembeCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="İşkembe"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/tavukCorba"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Tavuk"
+            android:textColor="@color/text_color" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="167dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="259dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/buttonDevam"
+            android:layout_width="158dp"
+            android:layout_height="82dp"
+            android:backgroundTint="@color/button_color"
+            android:text="Devam"
+            android:textSize="27sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="111dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="211dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <CheckBox
+            android:id="@+id/corba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çorba"
+            android:textColor="@color/header_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
