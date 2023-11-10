@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">finaluygulamasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Sure">
+        <item>Süre Seçiniz</item>
+        <item>2 sn</item>
+        <item>2.5 sn</item>
+        <item>3 sn</item>
+        <item>3.5 sn</item>
+        <item>4 sn</item>
+    </string-array>
+    <string name="isim">Ismail Oner</string>
+    <string name="sifre">02200201041</string>
+</resources>

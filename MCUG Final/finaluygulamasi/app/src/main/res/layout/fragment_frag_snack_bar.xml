@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".FragSnackBar" >
+
+    <TextView
+        android:id="@+id/textViewSnack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snack Bar Oluşturucu"
+        android:layout_marginStart="120sp"
+        android:layout_marginTop="20sp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="60sp"
+        android:ems="10"
+        android:hint="Mesajınızı Giriniz"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextAction"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="130sp"
+        android:ems="10"
+        android:hint="Action İsmi Giriniz"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinnerSnack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200sp"
+        />
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MenuEkrani">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView8"
+        android:name="com.example.finaluygulamasi.FragLogOut"
+        android:layout_width="414dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_frag_menu_select" />
+
+    <Button
+        android:id="@+id/buttonPopupMenu"
+        android:layout_width="99dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/backgroundColor"
+        android:text="Menu"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

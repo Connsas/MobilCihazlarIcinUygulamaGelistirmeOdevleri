@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameRGB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".FragRGB">
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="377dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:max="255"
+        android:progress="0"
+        android:progressBackgroundTint="@color/backgroundColor"
+        android:progressDrawable="@android:drawable/ic_media_play"
+        android:splitTrack="false"
+        android:thumb="@android:drawable/btn_default_small"
+        android:thumbTint="#FF0000" />
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        android:layout_width="377dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="165dp"
+        android:background="@null"
+        android:max="255"
+        android:progress="188"
+        android:progressBackgroundTint="@color/backgroundColor"
+        android:progressDrawable="@android:drawable/ic_media_play"
+        android:splitTrack="false"
+        android:thumb="@android:drawable/btn_default_small"
+        android:thumbTint="#00FF00" />
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        android:layout_width="377dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="260dp"
+        android:background="@null"
+        android:max="255"
+        android:progress="212"
+        android:progressBackgroundTint="@color/backgroundColor"
+        android:progressDrawable="@android:drawable/ic_media_play"
+        android:splitTrack="false"
+        android:thumb="@android:drawable/btn_default_small"
+        android:thumbTint="#0000FF" />
+
+    <TextView
+        android:id="@+id/textViewRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="30dp"
+        android:text="Red"
+        android:textColor="#FF0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="125dp"
+        android:text="Green"
+        android:textColor="#00FF00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="220dp"
+        android:text="Blue"
+        android:textColor="#0000FF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewColorCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="360dp"
+        android:text="#00bcd4"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+</FrameLayout>
